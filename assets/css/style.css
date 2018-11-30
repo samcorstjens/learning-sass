@@ -1,0 +1,128 @@
+body {
+  background: #ccffff;
+}
+
+.navigatiebalk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1265px;
+  padding-bottom: 200px;
+}
+.navigatiebalk ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navigatiebalk li {
+  float: left;
+  font-size: 50px;
+}
+.navigatiebalk li img {
+  width: 100px;
+  padding: 14px 16px;
+  height: 80px;
+}
+.navigatiebalk #afb {
+  position: relative;
+  margin: 0px 0px;
+}
+.navigatiebalk #afb img {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  width: 1259px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  border: 3px solid black;
+}
+.navigatiebalk #afb img.afbeelding2:hover {
+  opacity: 0;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #111;
+}
+
+.movies, .movies3, .movies2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.movies2 {
+  padding-top: 40px;
+}
+
+.films {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #333;
+  color: white;
+  width: 600px;
+}
+.films p {
+  overflow: hidden;
+}
+.films img {
+  float: left;
+  height: 220px;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.Extrainfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Extrainfo .openinguren {
+  width: 300px;
+  background: #333;
+  padding-top: 20px;
+}
+.Extrainfo .Extrafilms {
+  width: 800px;
+}
+.Extrainfo p {
+  color: white;
+  padding-left: 20px;
+}
+.Extrainfo h2 {
+  color: white;
+  padding-left: 20px;
+}
+
+.rij {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.rij img {
+  width: 180px;
+  height: auto;
+}
+
+.footer {
+  border-top: 2px solid black;
+}
+.footer p {
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

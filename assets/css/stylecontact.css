@@ -1,0 +1,167 @@
+body {
+  background: #ccffff;
+}
+
+.navigatiebalk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1265px;
+  padding-bottom: 50px;
+}
+.navigatiebalk ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navigatiebalk li {
+  float: left;
+  font-size: 70px;
+}
+.navigatiebalk li img {
+  width: 100px;
+  padding: 14px 16px;
+  height: 80px;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #111;
+}
+
+.Algemeen, .AlgemeenNieuws {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AlgemeenNieuws {
+  text-align: center;
+  color: white;
+  background: #333;
+  font-family: "Times New Roman";
+}
+.AlgemeenNieuws h3 {
+  font-size: 50px;
+}
+.AlgemeenNieuws img {
+  padding-bottom: 20px;
+  width: 700px;
+  height: 350px;
+}
+
+.AlgeemInterviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Interviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  width: 600px;
+}
+.Interviews p {
+  overflow: hidden;
+}
+.Interviews img {
+  float: left;
+  height: 220px;
+  width: 200px;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.GroepHumor {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.GroepHumor img {
+  height: 200px;
+  width: 180px;
+}
+.GroepHumor h2 {
+  font-size: 20px;
+}
+.GroepHumor p {
+  font-size: 15px;
+}
+
+.Humor {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer {
+  border-top: 2px solid black;
+}
+.footer p {
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+
+body {
+  background: #ccffff;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu menu main main main main" "menu menu main main main main";
+  grid-gap: 10px;
+  background-color: #333;
+  padding: 5px;
+}
+.grid-container li {
+  list-style-type: none;
+}
+.grid-container button, .grid-container select {
+  background-color: #333;
+  color: white;
+}
+.grid-container select {
+  margin-bottom: 15px;
+}
+.grid-container p {
+  font-size: 15px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=stylecontact.css.map */

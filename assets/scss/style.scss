@@ -1,0 +1,163 @@
+$paddingfilm:14px 16px;
+$grijs : #333;
+$white : white;
+$selectie: #111;
+$achtergrond-kleur:#ccffff;
+$borderwidth:3px;
+$balkgroot : 1265px;
+$paddingbottombalk: 200px;
+
+@mixin verdwijn($waarde){
+  -webkit-transition: opacity $waarde ease-in-out;
+  -moz-transition: opacity $waarde ease-in-out;
+  -o-transition: opacity $waarde ease-in-out;
+  transition: opacity $waarde ease-in-out;
+
+}
+@mixin flex1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@mixin flex2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body{
+  background: $achtergrond-kleur;
+}
+
+.navigatiebalk{
+  @include flex2;
+  width : $balkgroot;
+padding-bottom: $paddingbottombalk;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $grijs;
+}
+
+li {
+    float: left;
+    font-size:50px;
+img{
+  width:50*2px;
+  padding:$paddingfilm;
+  height: 80px;
+}
+}
+#afb {
+  position: relative;
+  margin:0px 0px;
+& img{
+  @include verdwijn(1s);
+  width: $balkgroot - 6px;
+height: 200px;
+  position: absolute;
+  left:0;
+@if $borderwidth !=0{
+  border : $borderwidth solid black;
+}
+}
+& img.afbeelding2:hover {
+    opacity:0;
+}
+
+}
+
+
+
+}
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:$paddingfilm;
+    text-decoration: none;
+&:hover {
+    background-color: $selectie;
+}
+}
+
+
+
+
+.movies{
+  @include flex1;
+
+}
+.movies2{
+  @extend .movies;
+  padding-top:40px;
+}
+.movies3{
+ @extend .movies;
+}
+
+
+
+.films{
+@include flex1;
+background-color: $grijs;
+color: $white;
+width:600px;
+p{
+  overflow: hidden;
+}
+
+& img{
+float:left;
+height: 220px;
+padding-right: 30px;
+padding-left:20px;
+padding-top:25px;
+}
+}
+
+
+
+
+.Extrainfo{
+  @include flex1;
+  & .openinguren{
+    width:300px;
+    background: $grijs;
+    padding-top : 20px;
+}
+& .Extrafilms{
+  width : 800px;
+
+}
+p{
+  color: $white;
+  padding-left:20px;
+}
+h2{
+  color: $white;
+  padding-left:20px;
+}
+
+
+
+}
+.rij{
+  @include flex1;
+  img{
+    width: 60px*3;
+    height:auto;
+  }
+}
+
+.footer{
+  border-top: 2px solid black;
+  p{
+    font-style: italic;
+    font-size: 25px*2;
+    text-align: center;
+  }
+}

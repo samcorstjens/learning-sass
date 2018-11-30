@@ -1,0 +1,148 @@
+$paddingfilm:14px 16px;
+$grijs : #333;
+$white : white;
+$selectie: #111;
+$achtergrond-kleur:#ccffff;
+$borderwidth:3px;
+$balkgroot : 1265px;
+$paddingbottombalk:50px;
+$imgwidth : 700px;
+$imgheight : 350px;
+$schrijfstijl : "Times New Roman";
+body{
+  background: $achtergrond-kleur;
+}
+@mixin flex1{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+@mixin flex3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@mixin flex4{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigatiebalk{
+  @include flex2;
+  width : $balkgroot;
+  padding-bottom : $paddingbottombalk;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $grijs;
+}
+
+li {
+    float: left;
+    font-size:70px;
+img{
+  width:50*2px;
+  padding:$paddingfilm;
+  height: 80px;
+}
+}
+}
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:$paddingfilm;
+    text-decoration: none;
+&:hover {
+    background-color: $selectie;
+}
+}
+
+.Algemeen{
+@include flex3;
+}
+.AlgemeenNieuws{
+@extend .Algemeen;
+text-align: center;
+color : $white;
+background: $grijs;
+font-family: $schrijfstijl;
+h3{
+  font-size: 2*25px;
+}
+img{
+  padding-bottom: 20px;
+  width : $imgwidth;
+  height : $imgheight;
+}
+}
+.AlgeemInterviews{
+  @include flex1;
+}
+.Interviews{
+@include flex4;
+background-color: $grijs;
+color: $white;
+width:600px;
+p{
+  overflow: hidden;
+}
+
+& img{
+float:left;
+height: 220px;
+width: 200px;
+padding-right: 30px;
+padding-left:20px;
+padding-top:25px;
+}
+}
+
+.GroepHumor {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap : 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+
+img{
+  height: 200px;
+  width : 180px;
+}
+h2{
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
+}
+}
+.Humor {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: $grijs;
+  color:$white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+.footer{
+  border-top: 2px solid black;
+  p{
+    font-style: italic;
+    font-size: 2*25px;
+    text-align: center;
+  }
+}

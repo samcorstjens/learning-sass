@@ -1,0 +1,153 @@
+body {
+  background: #ccffff;
+}
+
+.navigatiebalk {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1265px;
+  padding-bottom: 50px;
+}
+.navigatiebalk ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.navigatiebalk li {
+  float: left;
+  font-size: 70px;
+}
+.navigatiebalk li img {
+  width: 100px;
+  padding: 14px 16px;
+  height: 80px;
+}
+
+a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover {
+  background-color: #111;
+}
+
+.Algemeen, .AlgemeenNieuws {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.AlgemeenNieuws {
+  text-align: center;
+  color: white;
+  background: #333;
+  font-family: "Times New Roman";
+}
+.AlgemeenNieuws h3 {
+  font-size: 50px;
+}
+.AlgemeenNieuws img {
+  padding-bottom: 20px;
+  width: 700px;
+  height: 350px;
+}
+
+.AlgeemInterviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Interviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  width: 600px;
+}
+.Interviews p {
+  overflow: hidden;
+}
+.Interviews img {
+  float: left;
+  height: 220px;
+  width: 200px;
+  padding-right: 30px;
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.GroepHumor {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.GroepHumor img {
+  height: 200px;
+  width: 180px;
+}
+.GroepHumor h2 {
+  font-size: 20px;
+}
+.GroepHumor p {
+  font-size: 15px;
+}
+
+.Humor {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer {
+  border-top: 2px solid black;
+}
+.footer p {
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+
+body {
+  background: #ccffff;
+}
+
+h1 {
+  font-style: "Times New Roman";
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.film-box {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
+.film-box img {
+  width: 200px;
+  height: 280px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.film-box-items {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 60px/2;
+  text-align: center;
+}
+
+/*# sourceMappingURL=stylefilms.css.map */

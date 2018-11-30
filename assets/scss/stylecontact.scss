@@ -1,0 +1,40 @@
+@import 'stylenieuws';
+body{
+  background: $achtergrond-kleur;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu main main main main'
+    'menu menu main main main main';
+  grid-gap: 10px;
+  background-color: $grijs;
+  padding:5px;
+li{
+
+  list-style-type: none;
+}
+button{
+  background-color: $grijs;
+  color:$white;
+}
+select{
+  @extend button;
+  margin-bottom: 15px;
+}
+p{
+  font-size: 15px;
+}
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
